@@ -19,7 +19,12 @@
     <meta property="twitter:title" content="Is PHP dead?">
     <meta property="twitter:description" content="The definitive answer to an age-old question.">
     <meta property="twitter:image" content="<?= env('APP_URL') ?>/og.png">
-    <title>Is PHP dead?</title>
+
+    <?php if (production()): ?>
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://cdn.usefathom.com/script.js" data-site="RTJJMHSM" defer></script>
+        <!-- / Fathom -->
+    <?php endif; ?>
 
     <link rel="stylesheet" href="<?= env('APP_URL') ?>/css/app.css">
 </head>
@@ -30,7 +35,7 @@
 
     <main class="flex-1 flex items-center justify-center">
         <p class="text-white text-5xl font-bold">
-            <?php echo 'No.'; ?>
+            <?= 'No.' ?>
         </p>
     </main>
 

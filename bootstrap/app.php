@@ -18,3 +18,9 @@ if (! function_exists('asset')) {
         return env('APP_URL') . '/' . trim($path, '/');
     }
 }
+
+if (! function_exists('production')) {
+    function production(): bool {
+        return $_ENV['APP_ENV'] === 'production';
+    }
+}
