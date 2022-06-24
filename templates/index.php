@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is PHP dead?</title>
+    <meta name="title" content="Is PHP dead?">
+    <meta name="description" content="The definitive answer to an age-old question.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= env('APP_URL') ?>">
+    <meta property="og:title" content="Is PHP dead?">
+    <meta property="og:description" content="The definitive answer to an age-old question.">
+    <meta property="og:image" content="<?= env('APP_URL') ?>/og.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?= env('APP_URL') ?>">
+    <meta property="twitter:title" content="Is PHP dead?">
+    <meta property="twitter:description" content="The definitive answer to an age-old question.">
+    <meta property="twitter:image" content="<?= env('APP_URL') ?>/og.png">
+    <title>Is PHP dead?</title>
+
+    <link rel="stylesheet" href="<?= env('APP_URL') ?>/css/app.css">
+</head>
+<body class="antialiased bg-black font-sans w-screen h-screen flex flex-col">
+    <h2 class="text-gray-500 my-4 text-center">
+        is-php-dead.lol
+    </h2>
+
+    <main class="flex-1 flex items-center justify-center">
+        <p class="text-white text-5xl font-bold">
+            <?php echo 'No.'; ?>
+        </p>
+    </main>
+
+    <footer class="text-gray-500 text-sm px-6 py-4 flex items-center justify-between">
+        <a href="https://twitter.com/ryangjchandler" class="hover:underline hover:text-gray-100" target="_blank">
+            Ryan Chandler
+        </a>
+
+        <a href="https://github.com/ryangjchandler/is-php-dead.lol" target="_blank">
+            GitHub
+        </a>
+    </footer>
+</body>
+</html>

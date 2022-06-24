@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "devDependencies": {
+        "tailwindcss": "^3.1.4"
+    },
+    "scripts": {
+        "css": "npx tailwindcss -o ./public/css/app.css --content ./templates/*.php --minify",
+        "watch": "npm run css -- --watch"
+    }
+}
