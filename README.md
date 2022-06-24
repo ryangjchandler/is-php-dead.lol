@@ -10,6 +10,12 @@ Because everybody keeps on asking "Is PHP dead?" and "Is PHP dead in [insert yea
 
 It **doesn't** use any web framework. It's massively overengineered though.
 
+## Contributing
+
+Feel free to contribute if you think you can answer this question in a better way.
+
+**All commits must use the message `Is PHP dead?` to be accepted.**
+
 ## Credits
 
 * [Ryan Chandler](https://twitter.com/ryangjchandler)
