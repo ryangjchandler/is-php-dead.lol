@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b82a085bf6438c2375e9137b95c46f21",
+    "content-hash": "f350e18cf80ac095be8c72c6b42f720e",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -138,6 +138,72 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v4.4.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "0628e6c6d7c92f1a7bae543959bdc17347be2436"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/0628e6c6d7c92f1a7bae543959bdc17347be2436",
+                "reference": "0628e6c6d7c92f1a7bae543959bdc17347be2436",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v4.4.37"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:41:36+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -466,6 +532,118 @@
                 }
             ],
             "time": "2021-12-12T23:22:04+00:00"
+        },
+        {
+            "name": "voku/html-min",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/HtmlMin.git",
+                "reference": "52b680a8ee979d9cf5b397b4c136d368773cab35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/HtmlMin/zipball/52b680a8ee979d9cf5b397b4c136d368773cab35",
+                "reference": "52b680a8ee979d9cf5b397b4c136d368773cab35",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "voku/simple_html_dom": "^4.1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                }
+            ],
+            "description": "HTML Compressor and Minifier",
+            "homepage": "https://github.com/voku/HtmlMin",
+            "keywords": [
+                "compress",
+                "compression",
+                "compressor",
+                "html",
+                "minifier"
+            ],
+            "support": {
+                "issues": "https://github.com/voku/HtmlMin/issues",
+                "source": "https://github.com/voku/HtmlMin/tree/master"
+            },
+            "time": "2018-05-08T13:21:25+00:00"
+        },
+        {
+            "name": "voku/simple_html_dom",
+            "version": "4.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple_html_dom.git",
+                "reference": "b8fd3094da6be3a5fda2a17642f12b81bc24cb71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/b8fd3094da6be3a5fda2a17642f12b81bc24cb71",
+                "reference": "b8fd3094da6be3a5fda2a17642f12b81bc24cb71",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "symfony/css-selector": "~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "suggest": {
+                "voku/portable-utf8": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\helper\\": "src/voku/helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "dimabdc",
+                    "email": "support@titor.ru",
+                    "homepage": "http://github.com/dimabdc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple HTML DOM package.",
+            "homepage": "http://simplehtmldom.sourceforge.net/",
+            "keywords": [
+                "HTML Parser",
+                "dom",
+                "php dom"
+            ],
+            "support": {
+                "issues": "https://github.com/voku/simple_html_dom/issues",
+                "source": "https://github.com/voku/simple_html_dom/tree/master"
+            },
+            "time": "2018-05-09T23:22:11+00:00"
         }
     ],
     "packages-dev": [
@@ -565,5 +743,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

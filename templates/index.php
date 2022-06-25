@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,8 +24,8 @@
     <?php if (production()): ?>
         <script src="https://cdn.usefathom.com/script.js" data-site="RTJJMHSM" defer></script>
     <?php endif; ?>
-
-    <style><?= file_get_contents("./css/app.css") ?></style>
+    
+    <style><?= file_get_contents(__DIR__ . "/../public/css/app.css") ?></style>
 </head>
 <body>
     <h1>is-php-dead.lol</h1>
@@ -33,12 +33,8 @@
         <p><?= 'No.' ?></p>
     </main>
     <footer>
-        <a href="https://twitter.com/ryangjchandler" target="_blank" rel="noopener noreferrer">
-            Ryan Chandler
-        </a>
-        <a href="https://github.com/ryangjchandler/is-php-dead.lol" target="_blank" rel="noopener noreferrer">
-            GitHub
-        </a>
+        <a href="https://twitter.com/ryangjchandler" target="_blank">Ryan Chandler</a>
+        <a href="https://github.com/ryangjchandler/is-php-dead.lol" target="_blank">GitHub</a>
     </footer>
 </body>
 </html>

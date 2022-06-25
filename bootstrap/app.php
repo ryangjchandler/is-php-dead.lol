@@ -13,14 +13,20 @@ if (! function_exists('env')) {
     }
 }
 
-if (! function_exists('asset')) {
-    function asset(string $path): string {
-        return env('APP_URL') . '/' . trim($path, '/');
-    }
-}
-
 if (! function_exists('production')) {
     function production(): bool {
         return $_ENV['APP_ENV'] === 'production';
     }
 }
+
+if (! function_exists('get_include_contents')) {
+    function get_include_contents(string $filename): string|false {
+        if (is_file($filename)) {
+            ob_start();
+            include $filename;
+            return ob_get_clean();
+        }
+        return false;
+    }
+}
+

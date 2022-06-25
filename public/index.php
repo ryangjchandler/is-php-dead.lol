@@ -2,8 +2,16 @@
 
 require_once __DIR__ . '/../bootstrap/app.php';
 
-ob_start();
+$index = __DIR__ . '/../templates/index.php';
 
-include __DIR__ . '/../templates/index.php';
-
-echo ob_get_clean();
+if (production()) {
+  $htmlMin = new \voku\helper\HtmlMin();
+  $htmlMin->doRemoveSpacesBetweenTags();
+  $htmlMin->doOptimizeViaHtmlDomParser();
+  $html = get_include_contents($index);
+  echo $htmlMin->minify($html);
+} else {
+  ob_start();
+  include $index;
+  echo ob_get_clean();
+}
