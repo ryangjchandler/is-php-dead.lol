@@ -1,10 +1,12 @@
 {
     "private": true,
     "devDependencies": {
-        "tailwindcss": "^3.1.4"
+        "@parcel/css-cli": "^1.10.1"
     },
     "scripts": {
-        "css": "npx tailwindcss -o ./public/css/app.css --content ./templates/*.php --minify",
-        "watch": "npm run css -- --watch"
-    }
+        "build": "parcel-css --minify ./assets/app.css -o ./public/css/app.css"
+    },
+    "browserslist": [
+        "defaults"
+    ]
 }
