@@ -22,30 +22,21 @@
     <meta property="twitter:image" content="<?= env('APP_URL') ?>/og.png">
 
     <?php if (production()): ?>
-        <!-- Fathom - beautiful, simple website analytics -->
         <script src="https://cdn.usefathom.com/script.js" data-site="RTJJMHSM" defer></script>
-        <!-- / Fathom -->
     <?php endif; ?>
 
-    <link rel="stylesheet" href="<?= env('APP_URL') ?>/css/app.css">
+    <style><?= file_get_contents("./css/app.css") ?></style>
 </head>
-<body class="antialiased bg-black font-sans w-screen h-screen flex flex-col">
-    <h2 class="text-gray-500 my-4 text-center">
-        is-php-dead.lol
-    </h2>
-
-    <main class="flex-1 flex items-center justify-center">
-        <p class="text-white text-5xl font-bold">
-            <?= 'No.' ?>
-        </p>
+<body>
+    <h1>is-php-dead.lol</h1>
+    <main>
+        <p><?= 'No.' ?></p>
     </main>
-
-    <footer class="text-gray-500 text-sm px-6 py-4 flex items-center justify-between">
-        <a href="https://twitter.com/ryangjchandler" class="hover:underline hover:text-gray-100" target="_blank">
+    <footer>
+        <a href="https://twitter.com/ryangjchandler" target="_blank" rel="noopener noreferrer">
             Ryan Chandler
         </a>
-
-        <a href="https://github.com/ryangjchandler/is-php-dead.lol" target="_blank">
+        <a href="https://github.com/ryangjchandler/is-php-dead.lol" target="_blank" rel="noopener noreferrer">
             GitHub
         </a>
     </footer>
