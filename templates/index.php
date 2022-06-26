@@ -34,6 +34,12 @@
         is-php-dead.lol
     </h2>
 
+    <div class="w-full md:w-2/3 lg:w-1/2 mx-auto mt-4">
+        <a href="<?= base64_decode('aHR0cHM6Ly90d2l0dGVyLmNvbS90YXlsb3JvdHdlbGwvc3RhdHVzLzc4ODc5NDc4NDkzMjU2NDk5Mg==') ?>" target="_blank" rel="noopener">
+            <img src="/images/php-is-not-dead.jpg" alt="Taylor Otwell and Adam Wathan with Taylor's McLaren">
+        </a>
+    </div>
+
     <main class="flex-1 flex items-center justify-center">
         <p class="text-white text-5xl font-bold">
             <?= 'No.' ?>
