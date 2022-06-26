@@ -36,7 +36,7 @@
 
     <div class="w-full md:w-2/3 lg:w-1/2 mx-auto mt-4">
         <a href="https://twitter.com/taylorotwell/status/788794784932564992" target="_blank" rel="noopener">
-            <img src="/images/php-is-not-dead.jpg" alt="Taylor Otwell and Adam Wathan with Taylor's Lamborghini">
+            <img src="/images/php-is-not-dead.jpg" alt="Taylor Otwell and Adam Wathan with Taylor's McLaren">
         </a>
     </div>
 
