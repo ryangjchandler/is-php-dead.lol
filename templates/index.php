@@ -36,7 +36,7 @@
 
     <main class="flex-1 flex items-center justify-center">
         <p class="text-white text-5xl font-bold">
-            <?= 'No.' ?>
+            <?= 'Yes.' ?>
         </p>
     </main>
 
